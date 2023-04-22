@@ -50,20 +50,20 @@ class ProductManager {
 
 const manager = new ProductManager();
 
-manager.addProduct("Jamon", "Mediterraneo", 500, "thumbnail", 1, 10);
+manager.addProduct("NoteBook", "Asus 15.6", 139000, "thumbnail", 1, 10);
 console.log(manager.getProducts());
 
-manager.addProduct("Jamon", "Crudo", 350, "thumbnail", 1, 5); // Code repetido => no se suma al array + retorna mensaje de Error
+manager.addProduct("NoteBook", "Lenovo IdeaPad", 259000, "thumbnail", 1, 5); // Code repetido => no se suma al array + retorna mensaje de Error
 
-manager.addProduct("Queso", "Suizo", 600, "thumbnail", 2, 15);
+manager.addProduct("Monitor", "Gamer Samsung", 49000, "thumbnail", 2, 15);
 console.log(manager.getProducts());
 
-manager.addProduct("Pan", "Arabe", 750, "thumbnail", 3, 20);
-manager.addProduct("Mayonesa", "Orgánica", 430, "thumbnail", 4, 25);
+manager.addProduct("Parlante", "AJBL Flip 6", 58600, "thumbnail", 3, 20);
+manager.addProduct("Auriculares", "OEar Bluetooth TWS ", 3400, "thumbnail", 4, 25);
 console.log(manager.getProducts());
 
 console.log(manager.getProductById(4));
 console.log(manager.getProductById(8));
 
-manager.addProduct("Huevo", "", 150, "thumbnail", 5, 50); // Falta descripcion => no se suma al array + retorna mensaje de Error
+manager.addProduct("Televisor", "", 160000, "thumbnail", 5, 50); // Falta descripcion => no se suma al array + retorna mensaje de Error
 console.log(manager.getProducts());
